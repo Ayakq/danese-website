@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corso di Danese - Base</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Corso di Danese - Base</h1>
+        <p>Impara l'alfabeto, la pronuncia, la grammatica e le frasi di base</p>
+    </header>
+
+    <main>
+        <section class="lesson">
+            <h2>Lezione 1: Saluti</h2>
+            <div class="word">
+                <span class="danish">Hej</span> <span class="meaning">(Ciao)</span>
+                <button onclick="playAudio('hej')">Ascolta</button>
+            </div>
+            <div class="word">
+                <span class="danish">Godmorgen</span> <span class="meaning">(Buongiorno)</span>
+                <button onclick="playAudio('godmorgen')">Ascolta</button>
+            </div>
+            <div class="word">
+                <span class="danish">God aften</span> <span class="meaning">(Buonasera)</span>
+                <button onclick="playAudio('godaften')">Ascolta</button>
+            </div>
+        </section>
+
+        <section class="lesson">
+            <h2>Esercizio</h2>
+            <p>Scrivi la traduzione in danese:</p>
+            <ol>
+                <li>Ciao → <input type="text"></li>
+                <li>Buongiorno → <input type="text"></li>
+                <li>Buonasera → <input type="text"></li>
+            </ol>
+            <button onclick="showSolutions()">Mostra soluzioni</button>
+            <div id="solutions" style="display:none;">
+                <p>1. Hej</p>
+                <p>2. Godmorgen</p>
+                <p>3. God aften</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
